@@ -57,7 +57,20 @@ body {
 	transform-origin: center bottom;
 }
 
-/* Skill Item */
+/* Smooth hover animation */
+.skill-col:hover {
+	background: #2c2c2cdd;
+	animation: nod 0.8s ease-in-out;
+}
+/* Skill icons */
+.skill-col img,
+.skill-col svg {
+	max-width: 60px;
+	height: auto;
+	pointer-events: none;
+	user-select: none;
+}
+
 .skill-col {
 	font-family: "Roboto", sans-serif;
 	font-size: 15px;
@@ -69,14 +82,32 @@ body {
 	overflow: hidden;
 	transform-origin: center bottom;
 	will-change: transform;
-	transition: background 0.3s ease;
 	cursor: pointer;
+	transition: background 0.3s ease;
+	animation: breath 1.5s ease-in-out infinite alternate;
+	/* border: 1px solid #26ff0030; */
+	box-shadow: 0 0 15px #37ff143e;
 }
 
-/* Smooth hover animation */
-.skill-col:hover {
-	background: #2c2c2c;
-	animation: nod 0.8s ease-in-out;
+@keyframes breath {
+	0% {
+		transform:scale(1);
+	}
+	20% {
+		transform:scale(1.02);
+	}
+	40% {
+		transform: scale(1.04);
+	}
+	60% {
+		transform: scale(1.06);
+	}
+	80% {
+		transform: scale(1.08);
+	}
+	100% {
+		transform: scale(1.1);
+	}
 }
 
 /* Smooth, natural nod motion */
@@ -96,13 +127,4 @@ body {
 	100% {
 		transform: rotateZ(0deg);
 	}
-}
-
-/* Skill icons */
-.skill-col img,
-.skill-col svg {
-	max-width: 60px;
-	height: auto;
-	pointer-events: none;
-	user-select: none;
 }
