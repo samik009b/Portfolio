@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Arbutus&family=Bebas+Neue&family=Jersey+20&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour&family=Tiny5&family=Xanh+Mono:ital@0;1&display=swap");
+/* google fonts - "montserrat", "xanh mono", "bebas neue", "arbutus", "jersey 20", "sixtyfour", "tiny5" */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "jersey 20", sans-serif;
+	background: #000000;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: clamp(16px, 1.2vw, 22px);
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+}
+
+/* Loading Screen */
+#loading-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1000;
+	transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+}
+
+#loading-screen.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#loading-text {
+	font-size: clamp(18px, 4vw, 42px);
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 40px;
+	text-align: center;
+	padding: 0 20px;
+	opacity: 0;
+	animation: textFadeIn 0.6s ease-out forwards;
+}
+
+@keyframes textFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Progress Bar Container */
+.progress-container {
+	width: 80%;
+	max-width: 500px;
+	height: 4px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.progress-bar {
+	height: 100%;
+	background: #39ff14;
+	background-size: 200% 100%;
+	border-radius: 10px;
+	width: 0%;
+	transition: width 0.3s ease-out;
+	animation: shimmer 2s infinite;
+	box-shadow: 0 0 20px rgba(79, 172, 254, 0.5);
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200% 0;
+	}
+	100% {
+		background-position: 200% 0;
+	}
+}
+
+.percentage {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 18px;
+	margin-top: 15px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+/* Portfolio */
+
+@keyframes appear {
+	from {
+		opacity: 0;
+		scale: 0.5;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+#portfolio {
+	display: none;
+}
+
+#portfolio.visible {
+	display: block;
+}
+
+.heart-icon {
+	height: calc(2rem + 1vw);
+	width: auto;
+	animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: scale(1);
+	}
+	70% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.hero-img img {
+	max-width: 100%;
+	height: auto;
+	max-height: 300px;
+	object-fit: cover;
+	padding: 4px;
+	box-shadow: 8px 8px #39ff14;
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hero-img:hover img {
+	transform: scale(1.01);
+	cursor: pointer;
+	box-shadow: 12px 12px #39ff14;
+}
+
+#identification {
+	opacity: 0;
+}
+.stats-container {
+	padding: 60px 0;
+}
+
+.stat-card {
+	background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+	border: 2px solid #39ff14;
+	border-radius: 15px;
+	padding: 12px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 25px rgba(57, 255, 20, 0.7);
+	border-color: #39ff14;
+}
+
+.stat-number {
+	font-family: inherit, fantasy;
+	font-size: 3rem;
+	color: #39ff14;
+	line-height: 1;
+	margin-bottom: 10px;
+	text-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 30%;
+}
+
+.stat-label {
+	font-family: "tiny5", fantasy;
+	font-size: clamp(15px, 1.6vw, 50px);
+	color: #b0b0b0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 30%;
+}
+
+.stat-img {
+	max-height: 240px;
+	width: auto;
+}
+
+@media (max-width: 768px) {
+	.stat-number {
+		font-size: 3rem;
+	}
+	.heading {
+		font-size: 2.5rem;
+	}
+}
+.heading {
+	font-size: calc(2.375rem + 2.5vw);
+	font-family: fantasy;
+	background: linear-gradient(to bottom, #ffffff 50%, #39ff14 50%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 40%;
+}
+
+@media (max-width: 800px) {
+	.hero-sec {
+		flex-direction: column-reverse;
+	}
+	.hero-img img {
+		box-shadow: 0 0 transparent;
+	}
+}

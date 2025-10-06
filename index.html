@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- google fonts - "montserrat", "xanh mono", "bebas neue", "arbutus", "jersey 20", "sixtyfour", "tiny5" -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arbutus&family=Bebas+Neue&family=Jersey+20&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour&family=Tiny5&family=Xanh+Mono:ital@0;1&display=swap"
+			rel="stylesheet" />
+
+		<!-- <a href="https://www.flaticon.com/free-icons/pixel" title="pixel icons">Pixel icons created by Futuer - Flaticon</a> -->
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+
+		<!-- FA CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+
+		<link rel="stylesheet" href="./components/footer.css" />
+		<link rel="stylesheet" href="./components/navbar.css" />
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Portfolio | Samik</title>
+	</head>
+	<body>
+		<div id="portfolio" class="w-100 d-flex justify-content-center flex-column">
+			<nav class="navbar navbar-expand-sm p-0 w-100">
+				<div class="container-fluid">
+					<div class="navbar-brand" href="#">Samik</div>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="true"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav gap-2">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./Skills/skill.html">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./Projects/project.html">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./About/about.html">About</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="hero-sec container-md d-flex gap-5 mt-5 align-items-center justify-content-center w-100">
+				<div>
+					<h1 class="d-flex align-items-center gap-1 p-0 m-0" style="font-size: calc(2rem + 2vw)">
+						<img class="heart-icon" src="/images/heart.webp" />
+						<span style="font-size: calc(2rem + 2vw); color: #39ff14">Hello,</span> I'm Samik
+					</h1>
+					<p style="font-size: 1.3rem">
+						A dedicated web engineer and cloud computing enthusiast, <br />
+						committed to building robust, scalable solutions to empower businesses to grow.
+					</p>
+				</div>
+				<div class="hero-img d-flex flex-column gap-2" data-tilt data-tilt-max="6" data-tilt-speed="100">
+					<img src="./images/hero.jpg" />
+				</div>
+			</div>
+
+			<!-- points to be noted -->
+			<h1 class="heading text-center mt-5">Quick Stats</h1>
+
+			<div class="stats-container container">
+				<div class="row g-4 d-flex justify-content-center">
+					<div class="col-md-3 col-sm-5">
+						<div class="card stat-card h-100">
+							<img src="./images/projects-icon.png" class="card-img-top stat-img" />
+							<div class="card-body text-center">
+								<div class="stat-number">6+</div>
+								<div class="stat-label">Projects</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-5">
+						<div class="card stat-card h-100">
+							<img src="./images/skills-icon.png" class="card-img-top stat-img" />
+							<div class="card-body text-center">
+								<div class="stat-number">10+</div>
+								<div class="stat-label">Skills</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-5">
+						<div class="card stat-card h-100">
+							<img src="./images/experience-icon.png" class="card-img-top stat-img" />
+							<div class="card-body text-center">
+								<div class="stat-number">1.5 Yr</div>
+								<div class="stat-label">Experience</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-5">
+						<div class="card stat-card h-100">
+							<img src="./images/social-icon.png" class="card-img-top stat-img" />
+							<div class="card-body text-center">
+								<div class="stat-number">0</div>
+								<div class="stat-label">Social Life</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer mt-5 pt-5 pb-4 w-100">
+				<div class="container">
+					<div class="row g-4">
+						<!-- About Section -->
+						<div class="col-md-4 footer-columns">
+							<h3 class="footer-title" style="font-family: tiny5">Samik</h3>
+							<p class="footer-text">Web Engineer & Cloud Enthusiast building scalable solutions for the modern web.</p>
+						</div>
+
+						<!-- Quick Links -->
+						<div class="col-md-4 footer-columns">
+							<h3 class="footer-title">Quick Links</h3>
+							<ul class="footer-links">
+								<li><a href="#">Home</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+
+						<!-- Social Links -->
+						<div class="col-md-4">
+							<h3 class="footer-title">Connect With Me</h3>
+							<div class="social-icons d-flex gap-3 mt-3">
+								<a href="https://www.instagram.com/bsamik009?igsh=MXF1aHJ4aWo3ZWs0bA==" target="_blank" class="social-link">
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+								<a href="https://www.linkedin.com/in/samik-biswas-943805320/" target="_blank" class="social-link">
+									<i class="fa-brands fa-linkedin-in"></i>
+								</a>
+								<a href="mailto:samikb2024@gmail.com?subject=Portfolio Inquiry" class="social-link">
+									<i class="fa-regular fa-envelope"></i>
+								</a>
+								<a href="https://x.com/bsamik009?t=V6sgVtIiuZ4dRg5dsjRXcQ&s=09" target="_blank" class="social-link">
+									<i class="fa-brands fa-x-twitter"></i>
+								</a>
+							</div>
+							<a class="btn top-link" href="#">⇱ Back to top</a>
+						</div>
+					</div>
+
+					<!-- Copyright -->
+					<div class="row mt-4 pt-4 border-top" style="border-color: #333 !important">
+						<div class="col-12 text-center">
+							<p class="footer-copyright mb-0">&copy; 2025 Samik. All rights reserved. | Built with love</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Loading Screen -->
+		<div id="loading-screen">
+			<div id="loading-text">Compiling my regrets…</div>
+			<div class="progress-container">
+				<div class="progress-bar"></div>
+			</div>
+			<div class="percentage">0%</div>
+		</div>
+	</body>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<!-- vanilla-tilt.js CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+	<!-- custom js -->
+	<script src="script.js"></script>
+</html>

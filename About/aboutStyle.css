@@ -1,0 +1,153 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: clamp(16px, 1.2vw, 22px);
+	font-family: "jersey 20", sans-serif;
+	background: #000000;
+	color: #fff;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+}
+
+.content-container {
+	max-width: 1200px;
+	margin: 50px auto;
+	padding: 0 20px;
+}
+.about-me {
+	background: #1a1a1a;
+	border: 2px solid #39ff14;
+	padding: 30px;
+}
+.intro {
+	margin-bottom: 40px;
+	font-family: roboto;
+	font-size: 1.2rem;
+	line-height: 1.8;
+	text-align: justify;
+}
+.section-box {
+	border: 2px solid #39ff14;
+	padding: 30px;
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+
+.section-title {
+	font-family: "bebas neue";
+	font-size: 1.3rem;
+	color: #39ff14;
+	margin-bottom: 20px;
+}
+
+.section-content {
+	display: flex;
+	gap: 30px;
+	align-items: flex-start;
+}
+
+.carousel-wrapper {
+	flex-shrink: 0;
+	width: 300px;
+	height: 300px;
+}
+
+.carousel {
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.carousel-item {
+	height: 100%;
+}
+
+.carousel-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.text-content {
+	flex: 1;
+}
+
+.text-content p {
+	font-family: roboto;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	text-align: justify;
+}
+
+.stat-box div {
+	margin: 0 3px;
+	font-size: 1.1rem;
+	font-family: roboto;
+	font-weight: 500;
+	border: 1px solid #39ff14;
+	box-shadow: 0 0 3px #39ff14;
+	background: #37ff140f;
+	display: inline;
+	padding: 6px;
+	border-radius: 8px;
+}
+
+.heading {
+	font-size: calc(2.375rem + 2.5vw);
+	font-family: fantasy;
+	background: linear-gradient(to bottom, #ffffff 50%, #39ff14 50%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.stat-col {
+	background: #2b2b2b;
+	color: #39ff14;
+	font-size: 1rem;
+	font-family: roboto;
+	padding: 15px;
+	border: 2px solid #37ff145e;
+	border-radius: 4px;
+	display: inline-block;
+	width: auto;
+	text-align: center;
+	margin: auto;
+	transition: border 0.2s ease;
+}
+.stat-col:hover {
+	border: 2px solid #37ff14c4;
+	opacity: 1;
+}
+
+@media (max-width: 768px) {
+	.section-content {
+		flex-direction: column;
+	}
+
+	.carousel-wrapper {
+		width: 100%;
+	}
+	.intro {
+		font-size: 0.775rem;
+	}
+	.stat-col {
+		font-size: 0.775rem;
+	}
+	.text-content p {
+		font-size: 0.775rem;
+	}
+	.stat-box div {
+		font-size: 0.775rem;
+	}
+	.heading {
+		font-size: 2.5rem;
+	}
+}

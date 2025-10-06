@@ -1,0 +1,149 @@
+
+
+.footer-columns {
+	opacity: 0;
+	transform: translateY(50px);
+	animation: slideUp 0.8s ease-out forwards;
+	animation-timeline: view();
+	animation-range: entry 0% cover 20%;
+}
+
+.footer-columns:nth-child(1) {
+	animation-delay: 4s;
+}
+
+.footer-columns:nth-child(2) {
+	animation-delay: 4.3s;
+}
+
+.footer-columns:nth-child(3) {
+	animation-delay: 4.6s;
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+footer {
+	border-top: 2px solid #fff;
+	font-family: jersey 20;
+}
+
+/* Footer Styles */
+.footer {
+	background: linear-gradient(180deg, #0a0a0a, #000);
+	border-top: 2px solid #39ff14;
+	color: #b0b0b0;
+	margin-top: 80px;
+}
+
+.footer-title {
+	color: #39ff14;
+	font-size: 3rem;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 30%;
+}
+
+.footer-text {
+	color: #888;
+	line-height: 1.6;
+	font-size: 1.2rem;
+}
+
+.footer-links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-links li {
+	margin-bottom: 10px;
+}
+
+.footer-links a {
+	color: #b0b0b0;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	display: inline-block;
+	font-size: 1.2rem;
+}
+
+.footer-links a:hover {
+	color: #39ff14;
+	transform: translateX(5px);
+}
+
+.social-link {
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background: #1a1a1a;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+i {
+	color: white;
+	transition: all 0.3s ease;
+}
+.social-link:hover {
+	background: #39ff14;
+	border-color: #39ff14;
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(57, 255, 20, 0.3);
+}
+.social-link:hover i {
+	color: black;
+	background: #39ff14;
+}
+
+.footer-copyright {
+	color: #aaa;
+	font-size: 1.2rem;
+}
+
+.footer .border-top {
+	border-color: #333 !important;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		margin-top: 50px;
+	}
+
+	.social-link {
+		width: 45px;
+		height: 45px;
+	}
+
+	.social-icon-img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.top-link {
+	border: 1px solid #39ff14;
+	margin-top: 50px;
+	font-size: 0.8rem;
+	text-decoration: none;
+	color: #39ff14;
+	font-family: sans-serif;
+	transition: background 0.15s ease;
+}
+.top-link:hover {
+	background: #37ff1429;
+	color: #39ff14;
+}

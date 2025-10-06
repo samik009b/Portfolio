@@ -1,0 +1,27 @@
+.navbar .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+	border: none;
+}
+
+nav div {
+	padding: 5px;
+}
+
+ul li a {
+	font-size: clamp(15px, 1.2vw, 30px);
+	color: white !important;
+	border: 3px solid #000;
+}
+.navbar-brand {
+	font-size: 1.25rem;
+	letter-spacing: 2px;
+	font-family: "tiny5";
+}
+ul li a:hover {
+	color: #39ff14 !important;
+}
+
+li .active {
+	color: #39ff14 !important;
+	border-bottom: 2px solid #39ff14;
+}

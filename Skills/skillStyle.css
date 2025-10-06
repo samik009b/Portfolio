@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Arbutus&family=Bebas+Neue&family=Jersey+20&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour&family=Tiny5&family=Xanh+Mono:ital@0;1&display=swap");
+
+/* Base Reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Global Setup */
+html,
+body {
+	overflow-x: hidden; /* prevents horizontal scrollbar globally */
+	max-width: 100%;
+	background: #000;
+	color: #fff;
+	font-family: "jersey 20", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: clamp(16px, 1.2vw, 22px);
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+}
+
+/* Headings */
+.main-heading {
+	width: 100%;
+	border-bottom: 2px solid #37ff1477;
+	font-size: calc(2rem + 1.5vw);
+	font-family: fantasy;
+	background: linear-gradient(to bottom, #ffffff 50%, #39ff14 50%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.heading {
+	font-size: calc(2rem + 1vw);
+	background: linear-gradient(to bottom, #ffffff 50%, #39ff14 50%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Skill Container Columns */
+.col {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	background: #2f2f2f82;
+	padding: 2px;
+	border-radius: 5px;
+	transition: background 0.3s ease;
+	transform-origin: center bottom;
+}
+
+/* Skill Item */
+.skill-col {
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto 5px !important;
+	overflow: hidden;
+	transform-origin: center bottom;
+	will-change: transform;
+	transition: background 0.3s ease;
+	cursor: pointer;
+}
+
+/* Smooth hover animation */
+.skill-col:hover {
+	background: #2c2c2c;
+	animation: nod 0.8s ease-in-out;
+}
+
+/* Smooth, natural nod motion */
+@keyframes nod {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	25% {
+		transform: rotateZ(-6deg);
+	}
+	50% {
+		transform: rotateZ(6deg);
+	}
+	75% {
+		transform: rotateZ(-3deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+/* Skill icons */
+.skill-col img,
+.skill-col svg {
+	max-width: 60px;
+	height: auto;
+	pointer-events: none;
+	user-select: none;
+}

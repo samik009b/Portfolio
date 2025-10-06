@@ -1,0 +1,18 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "jersey 20", sans-serif;
+	background: #000000;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: clamp(16px, 1.2vw, 22px);
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+}
