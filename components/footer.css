@@ -1,4 +1,6 @@
-
+:root {
+	--primary-color: #89b980;
+}
 
 .footer-columns {
 	opacity: 0;
@@ -39,13 +41,13 @@ footer {
 /* Footer Styles */
 .footer {
 	background: linear-gradient(180deg, #0a0a0a, #000);
-	border-top: 2px solid #39ff14;
+	border-top: 2px solid var(--primary-color);
 	color: #b0b0b0;
 	margin-top: 80px;
 }
 
 .footer-title {
-	color: #39ff14;
+	color: var(--primary-color);
 	font-size: 3rem;
 	letter-spacing: 1px;
 	margin-bottom: 15px;
@@ -79,7 +81,7 @@ footer {
 }
 
 .footer-links a:hover {
-	color: #39ff14;
+	color: var(--primary-color);
 	transform: translateX(5px);
 }
 
@@ -99,14 +101,14 @@ i {
 	transition: all 0.3s ease;
 }
 .social-link:hover {
-	background: #39ff14;
-	border-color: #39ff14;
+	background: var(--primary-color);
+	border-color: var(--primary-color);
 	transform: translateY(-5px);
 	box-shadow: 0 5px 15px rgba(57, 255, 20, 0.3);
 }
 .social-link:hover i {
 	color: black;
-	background: #39ff14;
+	background: var(--primary-color);
 }
 
 .footer-copyright {
@@ -135,15 +137,15 @@ i {
 }
 
 .top-link {
-	border: 1px solid #39ff14;
+	border: 1px solid var(--primary-color);
 	margin-top: 50px;
 	font-size: 0.8rem;
 	text-decoration: none;
-	color: #39ff14;
+	color: var(--primary-color);
 	font-family: sans-serif;
 	transition: background 0.15s ease;
 }
 .top-link:hover {
 	background: #37ff1429;
-	color: #39ff14;
+	color: var(--primary-color);
 }

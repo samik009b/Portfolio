@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Arbutus&family=Bebas+Neue&family=Jersey+20&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour&family=Tiny5&family=Xanh+Mono:ital@0;1&display=swap");
 /* google fonts - "montserrat", "xanh mono", "bebas neue", "arbutus", "jersey 20", "sixtyfour", "tiny5" */
+:root {
+	--primary-color: #0dde09;
+}
 
 * {
 	padding: 0;
@@ -76,7 +79,7 @@ body {
 
 .progress-bar {
 	height: 100%;
-	background: #39ff14;
+	background: var(--primary-color);
 	background-size: 200% 100%;
 	border-radius: 10px;
 	width: 0%;
@@ -144,14 +147,14 @@ body {
 	max-height: 300px;
 	object-fit: cover;
 	padding: 4px;
-	box-shadow: 8px 8px #39ff14;
+	box-shadow: 8px 8px var(--primary-color);
 	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .hero-img:hover img {
 	transform: scale(1.01);
 	cursor: pointer;
-	box-shadow: 12px 12px #39ff14;
+	box-shadow: 12px 12px var(--primary-color);
 }
 
 #identification {
@@ -160,10 +163,14 @@ body {
 .stats-container {
 	padding: 60px 0;
 }
-
+.card-img-top {
+	opacity: 0.85;
+}
 .stat-card {
-	background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-	border: 2px solid #39ff14;
+	overflow: hidden;
+	background: black;
+	/* background: linear-gradient(145deg, #1a1a1a, #0d0d0d); */
+	/* border: 2px solid var(--primary-color); */
 	border-radius: 15px;
 	padding: 12px;
 	text-align: center;
@@ -173,13 +180,13 @@ body {
 .stat-card:hover {
 	transform: translateY(-10px);
 	box-shadow: 0 8px 25px rgba(57, 255, 20, 0.7);
-	border-color: #39ff14;
+	border-color: var(--primary-color);
 }
 
 .stat-number {
 	font-family: inherit, fantasy;
 	font-size: 3rem;
-	color: #39ff14;
+	color: var(--primary-color);
 	line-height: 1;
 	margin-bottom: 10px;
 	text-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
@@ -201,7 +208,7 @@ body {
 }
 
 .stat-img {
-	max-height: 240px;
+	max-height: 300px;
 	width: auto;
 }
 
@@ -216,7 +223,7 @@ body {
 .heading {
 	font-size: calc(2.375rem + 2.5vw);
 	font-family: fantasy;
-	background: linear-gradient(to bottom, #ffffff 50%, #39ff14 50%);
+	background: linear-gradient(to bottom, #ffffff 50%, var(--primary-color) 50%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;

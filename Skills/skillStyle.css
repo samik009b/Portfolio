@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Arbutus&family=Bebas+Neue&family=Jersey+20&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour&family=Tiny5&family=Xanh+Mono:ital@0;1&display=swap");
 
+:root {
+	--primary-color: #0dde09;
+}
+
 /* Base Reset */
 * {
 	padding: 0;
@@ -30,7 +34,7 @@ body {
 	border-bottom: 2px solid #37ff1477;
 	font-size: calc(2rem + 1.5vw);
 	font-family: fantasy;
-	background: linear-gradient(to bottom, #ffffff 50%, #39ff14 50%);
+	background: linear-gradient(to bottom, #ffffff 50%,var(--primary-color) 50%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -38,7 +42,7 @@ body {
 
 .heading {
 	font-size: calc(2rem + 1vw);
-	background: linear-gradient(to bottom, #ffffff 50%, #39ff14 50%);
+	background: linear-gradient(to bottom, #ffffff 50%,var(--primary-color) 50%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;

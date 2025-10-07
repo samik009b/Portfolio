@@ -1,3 +1,8 @@
+:root {
+	--primary-color: #0dde09;
+}
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -20,7 +25,7 @@ body {
 }
 .about-me {
 	background: #1a1a1a;
-	border: 2px solid #39ff14;
+	border: 2px solid var(--primary-color);
 	padding: 30px;
 }
 .intro {
@@ -31,7 +36,7 @@ body {
 	text-align: justify;
 }
 .section-box {
-	border: 2px solid #39ff14;
+	border: 2px solid var(--primary-color);
 	padding: 30px;
 	margin-bottom: 40px;
 	margin-top: 50px;
@@ -40,7 +45,7 @@ body {
 .section-title {
 	font-family: "bebas neue";
 	font-size: 1.3rem;
-	color: #39ff14;
+	color: var(--primary-color);
 	margin-bottom: 20px;
 }
 
@@ -91,8 +96,8 @@ body {
 	font-size: 1.1rem;
 	font-family: roboto;
 	font-weight: 500;
-	border: 1px solid #39ff14;
-	box-shadow: 0 0 3px #39ff14;
+	border: 1px solid var(--primary-color);
+	box-shadow: 0 0 3px var(--primary-color);
 	background: #37ff140f;
 	display: inline;
 	padding: 6px;
@@ -102,7 +107,7 @@ body {
 .heading {
 	font-size: calc(2.375rem + 2.5vw);
 	font-family: fantasy;
-	background: linear-gradient(to bottom, #ffffff 50%, #39ff14 50%);
+	background: linear-gradient(to bottom, #ffffff 50%, var(--primary-color) 50%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -110,7 +115,7 @@ body {
 
 .stat-col {
 	background: #2b2b2b;
-	color: #39ff14;
+	color: var(--primary-color);
 	font-size: 1rem;
 	font-family: roboto;
 	padding: 15px;
