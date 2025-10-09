@@ -2,6 +2,7 @@
 
 :root {
 	--primary-color: #0dde09;
+	--white: #ddd;
 }
 
 /* Base Reset */
@@ -9,6 +10,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	color: var(--white);
 }
 
 /* Global Setup */
@@ -17,7 +19,7 @@ body {
 	overflow-x: hidden; /* prevents horizontal scrollbar globally */
 	max-width: 100%;
 	background: #000;
-	color: #fff;
+	color: var(--white);
 	font-family: "jersey 20", sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -34,7 +36,7 @@ body {
 	border-bottom: 2px solid #37ff1477;
 	font-size: calc(2rem + 1.5vw);
 	font-family: fantasy;
-	background: linear-gradient(to bottom, #ffffff 50%,var(--primary-color) 50%);
+	background: linear-gradient(to bottom, #ffffff 50%, var(--primary-color) 50%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -42,7 +44,7 @@ body {
 
 .heading {
 	font-size: calc(2rem + 1vw);
-	background: linear-gradient(to bottom, #ffffff 50%,var(--primary-color) 50%);
+	background: linear-gradient(to bottom, #ffffff 50%, var(--primary-color) 50%);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -89,16 +91,16 @@ body {
 	cursor: pointer;
 	transition: background 0.3s ease;
 	animation: breath 1.5s ease-in-out infinite alternate;
-	/* border: 1px solid #26ff0030; */
-	box-shadow: 0 0 15px #37ff143e;
+	border-bottom: 1px solid #353535;
+	box-shadow: 0 2px 15px #353535;
 }
 
 @keyframes breath {
 	0% {
-		transform:scale(1);
+		transform: scale(1);
 	}
 	20% {
-		transform:scale(1.02);
+		transform: scale(1.02);
 	}
 	40% {
 		transform: scale(1.04);

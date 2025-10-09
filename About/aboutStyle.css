@@ -1,7 +1,7 @@
 :root {
 	--primary-color: #0dde09;
+	--white: #ddd;
 }
-
 
 * {
 	padding: 0;
@@ -13,7 +13,7 @@ body {
 	font-size: clamp(16px, 1.2vw, 22px);
 	font-family: "jersey 20", sans-serif;
 	background: #000000;
-	color: #fff;
+	color: var(--white);
 	line-height: 1.6;
 	letter-spacing: 0.5px;
 }

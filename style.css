@@ -2,6 +2,7 @@
 /* google fonts - "montserrat", "xanh mono", "bebas neue", "arbutus", "jersey 20", "sixtyfour", "tiny5" */
 :root {
 	--primary-color: #0dde09;
+	--white: #ddd;
 }
 
 * {
@@ -13,7 +14,7 @@
 body {
 	font-family: "jersey 20", sans-serif;
 	background: #000000;
-	color: #fff;
+	color: var(--white);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,7 +47,7 @@ body {
 
 #loading-text {
 	font-size: clamp(18px, 4vw, 42px);
-	color: #fff;
+	color: var(--white);
 	font-weight: 600;
 	margin-bottom: 40px;
 	text-align: center;
@@ -169,8 +170,8 @@ body {
 .stat-card {
 	overflow: hidden;
 	background: black;
-	/* background: linear-gradient(145deg, #1a1a1a, #0d0d0d); */
-	/* border: 2px solid var(--primary-color); */
+	background: #0b0b0b;
+	border: 3px solid #212121;
 	border-radius: 15px;
 	padding: 12px;
 	text-align: center;
