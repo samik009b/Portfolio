@@ -5,7 +5,6 @@
 	--white: #ddd;
 }
 
-/* Base Reset */
 * {
 	padding: 0;
 	margin: 0;
@@ -13,11 +12,8 @@
 	color: var(--white);
 }
 
-/* Global Setup */
-html,
 body {
-	overflow-x: hidden; /* prevents horizontal scrollbar globally */
-	max-width: 100%;
+	overflow-x: hidden; 
 	background: #000;
 	color: var(--white);
 	font-family: "jersey 20", sans-serif;
@@ -30,11 +26,10 @@ body {
 	letter-spacing: 0.5px;
 }
 
-/* Headings */
 .main-heading {
 	width: 100%;
 	border-bottom: 2px solid #37ff1477;
-	font-size: calc(2rem + 1.5vw);
+	font-size: calc(2.375rem + 2.5vw);
 	font-family: fantasy;
 	background: linear-gradient(to bottom, #ffffff 50%, var(--primary-color) 50%);
 	-webkit-background-clip: text;
@@ -50,7 +45,6 @@ body {
 	-webkit-text-fill-color: transparent;
 }
 
-/* Skill Container Columns */
 .col {
 	display: flex;
 	justify-content: center;
@@ -63,7 +57,6 @@ body {
 	transform-origin: center bottom;
 }
 
-/* Smooth hover animation */
 .skill-col:hover {
 	background: #2c2c2cdd;
 	animation: nod 0.8s ease-in-out;
@@ -116,7 +109,6 @@ body {
 	}
 }
 
-/* Smooth, natural nod motion */
 @keyframes nod {
 	0% {
 		transform: rotateZ(0deg);

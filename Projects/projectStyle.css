@@ -11,6 +11,10 @@
 	box-sizing: border-box;
 }
 
+.probably {
+	color: #333;
+}
+
 body {
 	font-family: "jersey 20", sans-serif;
 	background: #000000;
