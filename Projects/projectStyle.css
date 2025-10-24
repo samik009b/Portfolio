@@ -11,10 +11,6 @@
 	box-sizing: border-box;
 }
 
-.probably {
-	color: #333;
-}
-
 body {
 	font-family: "jersey 20", sans-serif;
 	background: #000000;
@@ -26,4 +22,35 @@ body {
 	font-size: clamp(16px, 1.2vw, 22px);
 	line-height: 1.6;
 	letter-spacing: 0.5px;
+}
+
+.card-title {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+
+.card-body {
+	background: #111;
+	border-bottom: 1px solid var(--primary-color);
+}
+
+.card-text {
+	font-family: "lucida console";
+	font-size: 0.875rem;
+}
+
+.live-demo:hover,
+.live-demo:hover i {
+	background: var(--primary-color);
+	color: #111;
+}
+
+.card-img-top {
+	height: 200px;
+	object-fit: cover;
+	transition: transform 0.4s ease; /* smooth animation */
+}
+
+.card:hover .card-img-top {
+	transform: scale(1.1); /* zoom in */
 }
