@@ -4,14 +4,20 @@ import {
   FaPython,
   FaHtml5,
   FaCss3,
-  FaJs,
+  FaJs  ,
   FaGitAlt,
   FaLinux,
   FaAws,
   FaDocker,
+  FaJava,
+  FaCode,
+  FaCube,
+  FaCogs,
+  FaNetworkWired,
 } from "react-icons/fa";
 import {
-  SiPostgresql,
+  SiTypescript,
+  SiMysql,
   SiMongodb,
   SiTailwindcss,
   SiRedis,
@@ -46,45 +52,38 @@ export default function Skills() {
       color: "text-brand",
     },
     {
-      id: "javascript",
-      name: "JavaScript",
+      id: "typescript",
+      name: "Typescript",
       category: "frontend",
-      icon: FaJs,
+      icon: SiTypescript,
       color: "text-brand",
     },
     {
       id: "html5",
-      name: "HTML5",
+      name: "HTML",
       category: "frontend",
       icon: FaHtml5,
       color: "text-brand",
     },
     {
       id: "css3",
-      name: "CSS3",
+      name: "CSS",
       category: "frontend",
       icon: FaCss3,
       color: "text-brand",
     },
     {
       id: "tailwind",
-      name: "Tailwind CSS",
+      name: "Tailwind",
       category: "frontend",
       icon: SiTailwindcss,
       color: "text-brand",
     },
     {
-      id: "flowbite",
-      name: "Flowbite React",
+      id: "daisyui",
+      name: "DaisyUI",
       category: "frontend",
       icon: FlowbiteIcon,
-      color: "text-brand",
-    },
-    {
-      id: "nodejs",
-      name: "Node.js",
-      category: "backend",
-      icon: FaNodeJs,
       color: "text-brand",
     },
     {
@@ -95,31 +94,31 @@ export default function Skills() {
       color: "text-brand",
     },
     {
+      id: "spring",
+      name: "Spring Boot",
+      category: "backend",
+      icon: FaJava,
+      color: "text-brand",
+    },
+    {
+      id: "nodejs",
+      name: "Node.js",
+      category: "backend",
+      icon: FaNodeJs,
+      color: "text-brand",
+    },
+    {
       id: "python",
-      name: "Python 3",
+      name: "Python",
       category: "backend",
       icon: FaPython,
       color: "text-brand",
     },
     {
-      id: "aws",
-      name: "AWS Cloud",
-      category: "backend",
-      icon: FaAws,
-      color: "text-brand",
-    },
-    {
-      id: "docker",
-      name: "Docker",
-      category: "backend",
-      icon: FaDocker,
-      color: "text-brand",
-    },
-    {
-      id: "postgresql",
-      name: "PostgreSQL",
+      id: "mysql",
+      name: "MySQL",
       category: "databases",
-      icon: SiPostgresql,
+      icon: SiMysql,
       color: "text-brand",
     },
     {
@@ -137,6 +136,20 @@ export default function Skills() {
       color: "text-brand",
     },
     {
+      id: "aws",
+      name: "AWS Cloud",
+      category: "databases",
+      icon: FaAws,
+      color: "text-brand",
+    },
+    {
+      id: "docker",
+      name: "Docker",
+      category: "databases",
+      icon: FaDocker,
+      color: "text-brand",
+    },
+    {
       id: "git",
       name: "Git VCS",
       category: "databases",
@@ -150,12 +163,41 @@ export default function Skills() {
       icon: FaLinux,
       color: "text-brand",
     },
+    {
+      id: "dsa",
+      name: "DSA",
+      category: "subjects",
+      icon: FaCode,
+      color: "text-brand",
+    },
+    {
+      id: "oops",
+      name: "OOPs",
+      category: "subjects",
+      icon: FaCube,
+      color: "text-brand",
+    },
+    {
+      id: "lld",
+      name: "LLD",
+      category: "subjects",
+      icon: FaCogs,
+      color: "text-brand",
+    },
+    {
+      id: "hld",
+      name: "HLD",
+      category: "subjects",
+      icon: FaNetworkWired,
+      color: "text-brand",
+    },
   ];
 
   const categories = [
     { id: "frontend", title: "FRONT-END ARCHITECTURE", subtitle: "Interface Engines" },
     { id: "backend", title: "BACK-END ENGINE", subtitle: "REST Systems & Orchestrations" },
-    { id: "databases", title: "STORAGE & PROTOCOLS", subtitle: "Data Models & Networks" },
+    { id: "databases", title: "STORAGE & PROTOCOLS", subtitle: "Data Models, Infra & CLI" },
+    { id: "subjects", title: "CORE CS & DESIGN", subtitle: "DSA, OOP, LLD & HLD" },
   ];
 
   return (
@@ -175,7 +217,7 @@ export default function Skills() {
       </div>
 
       {/* Grid of Categories */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {categories.map((cat) => (
           <div
             key={cat.id}

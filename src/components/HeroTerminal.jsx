@@ -37,14 +37,14 @@ export default function HeroTerminal() {
             Samik Biswas
           </h5>
           <span className="text-[10px] text-brand font-bold tracking-widest mt-1 block">
-            DEV_ENGINEER
+            CS_STUDENT
           </span>
 
           {/* Symmetrical Terminal Status lines */}
           <div className="w-full border-t border-default border-dashed mt-4 pt-3 text-[10px] text-left space-y-1.5 text-neutral-tertiary-medium">
             <div className="flex justify-between">
               <span>HOST_NAME:</span>
-              <span className="text-heading font-semibold">SAMIK-CORE</span>
+              <span className="text-heading font-semibold">SAMIK-ROOT</span>
             </div>
             <div className="flex justify-between">
               <span>SYS_KERNEL:</span>
@@ -80,15 +80,15 @@ export default function HeroTerminal() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs">
                 <div className="flex items-center gap-2 text-neutral-tertiary-medium">
                   <Cpu className="w-4 h-4 text-brand flex-shrink-0" />
-                  <span>React / Vite</span>
+                  <span>FRONTEND</span>
                 </div>
                 <div className="flex items-center gap-2 text-neutral-tertiary-medium">
                   <Shield className="w-4 h-4 text-brand flex-shrink-0" />
-                  <span>AWS & Docker</span>
+                  <span>BACKEND</span>
                 </div>
                 <div className="flex items-center gap-2 text-neutral-tertiary-medium">
                   <Globe className="w-4 h-4 text-brand flex-shrink-0" />
-                  <span>REST API Eng</span>
+                  <span>DSA</span>
                 </div>
               </div>
             </div>
