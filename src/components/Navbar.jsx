@@ -67,7 +67,7 @@ export default function Navbar() {
             </div>
 
             {/* Hidden brand name on mobile to save layout space */}
-            <span className="self-center text-sm sm:text-base md:text-xl text-heading font-semibold whitespace-nowrap group-hover:text-brand transition-colors duration-200 font-mono uppercase tracking-wide hidden sm:block">
+            <span className="self-center text-sm sm:text-base md:text-xl text-heading font-semibold whitespace-nowrap group-hover:text-brand transition-colors duration-200 font-mono uppercase tracking-wide sm:block">
               Samik Biswas
             </span>
           </a>
