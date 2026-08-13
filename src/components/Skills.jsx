@@ -66,24 +66,10 @@ export default function Skills() {
       color: "text-brand",
     },
     {
-      id: "css3",
-      name: "CSS",
-      category: "frontend",
-      icon: FaCss3,
-      color: "text-brand",
-    },
-    {
       id: "tailwind",
       name: "Tailwind",
       category: "frontend",
       icon: SiTailwindcss,
-      color: "text-brand",
-    },
-    {
-      id: "daisyui",
-      name: "DaisyUI",
-      category: "frontend",
-      icon: FlowbiteIcon,
       color: "text-brand",
     },
     {
@@ -105,13 +91,6 @@ export default function Skills() {
       name: "Node.js",
       category: "backend",
       icon: FaNodeJs,
-      color: "text-brand",
-    },
-    {
-      id: "python",
-      name: "Python",
-      category: "backend",
-      icon: FaPython,
       color: "text-brand",
     },
     {

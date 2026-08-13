@@ -73,14 +73,14 @@ export default function HeroTerminal() {
               </p>
               
               <p>
-                I am a web systems engineer and cloud architect dedicated to software craft and digital minimalism. My engineering focus centers on building clean, robust, and highly available applications using React on the frontend and containerized backend architectures in Docker/AWS environments.
+                I am a student of Information Technology and currently building web applications. I am primarily interested in backend systems, devops and different software's architectures. I work with Java, Typescript, SpringBoot, ReactJs and NodeJs.
               </p>
 
               {/* Bulleted Core Specifications */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs">
                 <div className="flex items-center gap-2 text-neutral-tertiary-medium">
                   <Cpu className="w-4 h-4 text-brand flex-shrink-0" />
-                  <span>FRONTEND</span>
+                  <span>DSA</span>
                 </div>
                 <div className="flex items-center gap-2 text-neutral-tertiary-medium">
                   <Shield className="w-4 h-4 text-brand flex-shrink-0" />
@@ -88,7 +88,7 @@ export default function HeroTerminal() {
                 </div>
                 <div className="flex items-center gap-2 text-neutral-tertiary-medium">
                   <Globe className="w-4 h-4 text-brand flex-shrink-0" />
-                  <span>DSA</span>
+                  <span>DEVOPS</span>
                 </div>
               </div>
             </div>
