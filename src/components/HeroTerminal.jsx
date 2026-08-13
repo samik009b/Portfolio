@@ -7,14 +7,26 @@ export default function HeroTerminal() {
       <div className="flex items-center justify-between border-b border-default bg-neutral-secondary-soft px-4 py-2 text-[10px] sm:text-xs text-heading select-none border-dashed">
         <div className="flex items-center gap-1.5 font-bold truncate">
           <TerminalIcon className="w-3.5 h-3.5 text-brand flex-shrink-0" />
-          <span className="truncate">CONSOLE_TERMINAL <span className="hidden sm:inline">// SAMIK-MAINFRAME</span> // SYS_INIT: OK</span>
+          <span className="truncate">
+            CONSOLE_TERMINAL{" "}
+            <span className="hidden sm:inline">// SAMIK-MAINFRAME</span> //
+            SYS_INIT: OK
+          </span>
         </div>
         <div className="flex items-center gap-2 flex-shrink-0">
-          <span className="text-[10px] text-neutral-tertiary-medium hidden sm:inline">[ BAUD: 9600 ]</span>
+          <span className="text-[10px] text-neutral-tertiary-medium hidden sm:inline">
+            [ BAUD: 9600 ]
+          </span>
           <div className="flex items-center gap-1">
-            <span className="cursor-pointer hover:text-brand-strong px-0.5 sm:px-1">[ - ]</span>
-            <span className="cursor-pointer hover:text-brand-strong px-0.5 sm:px-1">[ ❑ ]</span>
-            <span className="cursor-pointer hover:text-red-500 px-0.5 sm:px-1">[ X ]</span>
+            <span className="cursor-pointer hover:text-brand-strong px-0.5 sm:px-1">
+              [ - ]
+            </span>
+            <span className="cursor-pointer hover:text-brand-strong px-0.5 sm:px-1">
+              [ ❑ ]
+            </span>
+            <span className="cursor-pointer hover:text-red-500 px-0.5 sm:px-1">
+              [ X ]
+            </span>
           </div>
         </div>
       </div>
@@ -29,10 +41,10 @@ export default function HeroTerminal() {
 
           <img
             className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-brand/50 object-cover shadow-[0_0_8px_rgba(87,196,105,0.15)] mb-4"
-            src="hero.jpg"
+            src="hero1.png"
             alt="Samik Biswas"
           />
-          
+
           <h5 className="text-lg md:text-xl font-bold tracking-tight text-heading uppercase truncate w-full">
             Samik Biswas
           </h5>
@@ -71,9 +83,12 @@ export default function HeroTerminal() {
               <p className="text-[10px] font-bold text-brand uppercase tracking-wider animate-pulse-fast">
                 &gt; BOOT SEQUENCE INJECTED // CORE COMPILER: LOADED
               </p>
-              
+
               <p>
-                I am a student of Information Technology and currently building web applications. I am primarily interested in backend systems, devops and different software's architectures. I work with Java, Typescript, SpringBoot, ReactJs and NodeJs.
+                I am a student of Information Technology and currently building
+                web applications. I am primarily interested in backend systems,
+                devops and different software's architectures. I work with Java,
+                Typescript, SpringBoot, ReactJs and NodeJs.
               </p>
 
               {/* Bulleted Core Specifications */}
