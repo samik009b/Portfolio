@@ -2,19 +2,7 @@ import { useState, useEffect } from "react";
 import { Terminal, Shield, Cpu } from "lucide-react";
 
 export default function Navbar() {
-  const [time, setTime] = useState("00:00:00");
   const [activeSection, setActiveSection] = useState("HOME");
-
-  // Real-time ticking terminal clock
-  useEffect(() => {
-    const tick = () => {
-      const now = new Date();
-      setTime(now.toTimeString().split(" ")[0]);
-    };
-    tick();
-    const interval = setInterval(tick, 1000);
-    return () => clearInterval(interval);
-  }, []);
 
   // Real-time location scroll tracker
   useEffect(() => {
@@ -47,7 +35,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center mx-auto max-w-7xl px-4 py-2 text-[9px] sm:text-[10px] text-neutral-tertiary-medium">
           <div className="flex items-center gap-1.5 sm:gap-2 truncate">
             <Cpu className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-brand flex-shrink-0 animate-pulse-fast" />
-            <span className="text-brand font-bold flex-shrink-0">SAMIK-OS</span>
+            <span className="text-brand font-bold flex-shrink-0">DEV-OS</span>
             <span className="hidden sm:inline">//</span>
             <span className="text-heading font-semibold truncate">LOC: /SYS/{activeSection}</span>
           </div>
@@ -58,7 +46,7 @@ export default function Navbar() {
               <span className="text-brand font-bold hidden sm:inline">SECURE</span>
             </div>
             <span className="hidden sm:inline">//</span>
-            <span className="text-heading font-semibold">CLOCK: {time}</span>
+            <span className="text-heading font-semibold">CLOCK: 11:43:22</span>
           </div>
         </div>
       </div>
@@ -82,7 +70,7 @@ export default function Navbar() {
 
             {/* Hidden brand name on mobile to save layout space */}
             <span className="self-center text-sm sm:text-base md:text-xl text-heading font-semibold whitespace-nowrap group-hover:text-brand transition-colors duration-200 font-mono uppercase tracking-wide hidden sm:block">
-              Samik B.
+              Samik Biswas
             </span>
           </a>
 

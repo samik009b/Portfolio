@@ -12,7 +12,6 @@ export default function FooterComponent() {
   return (
     <footer className="w-full bg-neutral-primary-soft border-t-2 border-double border-default py-8 mt-12 font-mono text-xs">
       <div className="mx-auto w-full max-w-7xl px-4 space-y-8">
-        
         {/* Symmetrical Dual-Grid on Mobile, 3-Column on Desktop */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 pb-6 border-b border-default border-dashed">
           {/* Column 1: System Index */}
@@ -23,22 +22,34 @@ export default function FooterComponent() {
             </div>
             <ul className="space-y-2 text-neutral-tertiary-medium">
               <li>
-                <a href="#home" className="hover:text-brand hover:underline flex items-center gap-1">
+                <a
+                  href="#home"
+                  className="hover:text-brand hover:underline flex items-center gap-1"
+                >
                   <span>&gt;</span> HOME_NODE
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-brand hover:underline flex items-center gap-1">
+                <a
+                  href="#skills"
+                  className="hover:text-brand hover:underline flex items-center gap-1"
+                >
                   <span>&gt;</span> TECH_SKILLS
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-brand hover:underline flex items-center gap-1">
+                <a
+                  href="#projects"
+                  className="hover:text-brand hover:underline flex items-center gap-1"
+                >
                   <span>&gt;</span> ARCHIVE_DEV
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-brand hover:underline flex items-center gap-1">
+                <a
+                  href="#about"
+                  className="hover:text-brand hover:underline flex items-center gap-1"
+                >
                   <span>&gt;</span> ABOUT_SYS
                 </a>
               </li>
@@ -53,23 +64,39 @@ export default function FooterComponent() {
             </div>
             <ul className="space-y-2 text-neutral-tertiary-medium">
               <li>
-                <a href="tel:+916291116968" className="hover:text-brand hover:underline flex items-center gap-1">
+                <a
+                  href="tel:+916291116968"
+                  className="hover:text-brand hover:underline flex items-center gap-1"
+                >
                   <span>&gt;</span> TEL: +91-6291
                 </a>
               </li>
               <li>
-                <a href="mailto:mail@samik.dev" className="hover:text-brand hover:underline flex items-center gap-1">
-                  <span>&gt;</span> MAIL: mail@samik
+                <a
+                  href="mailto:samikb2024@gmail.com"
+                  className="hover:text-brand hover:underline flex items-center gap-1"
+                >
+                  <span>&gt;</span> EMAIL: samikb2024@gmail.com
                 </a>
               </li>
               <li>
-                <a href="https://github.com/samik009b" target="_blank" rel="noreferrer" className="hover:text-brand hover:underline flex items-center gap-1">
-                  <span>&gt;</span> GIT: samik009b
+                <a
+                  href="https://github.com/samik009b"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-brand hover:underline flex items-center gap-1"
+                >
+                  <span>&gt;</span> GITHUB: samik009b
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/in/samik" target="_blank" rel="noreferrer" className="hover:text-brand hover:underline flex items-center gap-1">
-                  <span>&gt;</span> LINK: samik-in
+                <a
+                  href="https://www.linkedin.com/in/samik-biswas-943805320/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-brand hover:underline flex items-center gap-1"
+                >
+                  <span>&gt;</span> LINKEDIN: samik
                 </a>
               </li>
             </ul>
@@ -95,15 +122,14 @@ export default function FooterComponent() {
           <span className="text-[9px] sm:text-[10px] text-neutral-tertiary-medium tracking-wide uppercase select-none text-center sm:text-left">
             &copy; 2026 SAMIK BISWAS. SYSTEM REGISTERED.
           </span>
-          
+
           {/* Interactive Escape to Top trigger */}
           <a
             href="#home"
             onClick={handleScrollTop}
             className="flex items-center gap-1.5 text-neutral-900 bg-brand hover:bg-brand-strong font-bold py-2 px-4 rounded-sm hover:scale-102 transition-all duration-200 shadow-sm border border-transparent tracking-widest text-[9px] sm:text-[10px] uppercase select-none flex-shrink-0"
           >
-            <ArrowUp className="w-3.5 h-3.5" />
-            [ ESCAPE_TO_HOME_PROMPT ]
+            <ArrowUp className="w-3.5 h-3.5" />[ ESCAPE_TO_HOME_PROMPT ]
           </a>
         </div>
       </div>
