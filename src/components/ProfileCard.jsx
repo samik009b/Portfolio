@@ -7,7 +7,7 @@ export default function ProfileCard() {
 
       <img
         className="w-24 h-24 mb-6 rounded-full border-2 border-brand/50 object-cover shadow-[0_0_8px_rgba(57,255,20,0.15)]"
-        src="hero.jpg"
+        src="hero1.png"
         alt="Samik Biswas"
       />
       <h5 className="mb-2 text-2xl font-bold tracking-tight text-heading font-mono uppercase">
